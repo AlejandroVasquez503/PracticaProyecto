@@ -1,5 +1,6 @@
 using HospitalProyect.Data;
 using HospitalProyect.Models;
+using HospitalProyect.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,10 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("defaultDbConnection"))
 );
+
+builder.Services.AddScoped<SpecialtyRepository>();
+builder.Services.AddScoped<StaffCategoryRepository>();
+builder.Services.AddScoped<StaffRepository>();
 
 var app = builder.Build();
 
