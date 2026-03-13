@@ -32,7 +32,7 @@ namespace HospitalProyect.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(StaffCategoryModel staffCategoryModel)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 _staffCategoryRepository.Add(staffCategoryModel);
                 return RedirectToAction(nameof(Index));
@@ -54,7 +54,7 @@ namespace HospitalProyect.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(StaffCategoryModel staffCategoryModel)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 _staffCategoryRepository.Update(staffCategoryModel);
                 return RedirectToAction(nameof(Index));
@@ -62,12 +62,19 @@ namespace HospitalProyect.Controllers
             return View(staffCategoryModel);
         }
 
+        public IActionResult Delete(int id)
+        {
+            var staffCategory = _staffCategoryRepository.GetById(id);
+            if (staffCategory == null) return NotFound();
+            return View(staffCategory);
+        }
+
         // POST: StaffCategoryController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(StaffCategoryModel staffCategoryModel)
         {
-            _staffCategoryRepository.Delete(id);
+            _staffCategoryRepository.Delete(staffCategoryModel.Id);
             return RedirectToAction(nameof(Index));
         }
     }

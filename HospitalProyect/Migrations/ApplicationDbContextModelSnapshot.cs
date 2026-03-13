@@ -37,7 +37,7 @@ namespace HospitalProyect.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("specialityModel");
+                    b.ToTable("specialtyModel");
                 });
 
             modelBuilder.Entity("HospitalProyect.Models.StaffCategoryModel", b =>
