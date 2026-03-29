@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace HospitalProyect.Migrations
 {
     /// <inheritdoc />
-    public partial class initial_migration : Migration
+    public partial class Inicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -50,7 +50,8 @@ namespace HospitalProyect.Migrations
                     StaffCategoryId = table.Column<int>(type: "int", nullable: false),
                     SpecialtyId = table.Column<int>(type: "int", nullable: true),
                     HireDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false)
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    PhotoUrl = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

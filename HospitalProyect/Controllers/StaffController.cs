@@ -1,5 +1,6 @@
 ﻿using HospitalProyect.Models;
 using HospitalProyect.Repositories;
+using HospitalProyect.Utils;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -11,12 +12,14 @@ namespace HospitalProyect.Controllers
         private readonly StaffRepository _staffRepository;
         private readonly StaffCategoryRepository _staffCategoryRepository;
         private readonly SpecialtyRepository _specialtyRepository;
+        private readonly IConfiguration _config;
 
-        public StaffController(StaffRepository staffRepository, StaffCategoryRepository staffCategoryRepository, SpecialtyRepository specialtyRepository)
+        public StaffController(StaffRepository staffRepository, StaffCategoryRepository staffCategoryRepository, SpecialtyRepository specialtyRepository, IConfiguration configuration)
         {
             _staffRepository = staffRepository;
             _staffCategoryRepository = staffCategoryRepository;
             _specialtyRepository = specialtyRepository;
+            _config = configuration;
         }
 
         // GET: StaffController
@@ -44,6 +47,12 @@ namespace HospitalProyect.Controllers
         {
             if (!ModelState.IsValid)
             {
+                if(staff.PhotoFile != null && staff.PhotoFile.Length > 0)
+                {
+                    string imageUrl = CloudinaryUtil.UploadImage(staff.PhotoFile, _config);
+                    staff.PhotoUrl = imageUrl;
+                }
+
                 _staffRepository.Add(staff);
                 return RedirectToAction(nameof(Index));
             }
@@ -72,6 +81,18 @@ namespace HospitalProyect.Controllers
         {
             if (!ModelState.IsValid)
             {
+                if (staff.PhotoFile != null && staff.PhotoFile.Length > 0)
+                {
+                    string newImageUrl = CloudinaryUtil.UploadImage(staff.PhotoFile, _config);
+                    staff.PhotoUrl = newImageUrl;
+                }
+
+                var specialties = _specialtyRepository.GetAll();
+                var staffCategories = _staffCategoryRepository.GetAll();
+
+                ViewBag.Specialties = new SelectList(specialties, nameof(SpecialtyModel.Id), nameof(SpecialtyModel.Name), staff.SpecialtyId);
+                ViewBag.StaffCategories = new SelectList(staffCategories, nameof(StaffCategoryModel.Id), nameof(StaffCategoryModel.Name), staff.StaffCategoryId);
+
                 _staffRepository.Update(staff);
                 return RedirectToAction(nameof(Index));
             }
