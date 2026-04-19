@@ -1,8 +1,68 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿﻿
+@model HospitalProyect.ViewsModels.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+    <h1 class="mb-1">Bienvenido, @ViewBag.UserName</h1>
+    <p class="text-muted mb-4">Resumen general del personal del sistema</p>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 border-start border-primary border-4 h-100">
+                <div class="card-body">
+                    <h5 class="text-primary fw-bold text-uppercase mb-1">Total Personal</h5>
+                    <div class="h2 font-weight-bold text-dark">@Model.TotalStaff</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 border-start border-success border-4 h-100">
+                <div class="card-body">
+                    <h5 class="text-success fw-bold text-uppercase mb-1">Activos</h5>
+                    <div class="h2 font-weight-bold text-dark">@Model.ActiveStaff</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 border-start border-danger border-4 h-100">
+                <div class="card-body">
+                    <h5 class="text-danger fw-bold text-uppercase mb-1">Inactivos</h5>
+                    <div class="h2 font-weight-bold text-dark">@Model.InactiveStaff</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0 fw-bold text-secondary">Personal por Categoría</h5>
+                </div>
+                <div class="card-body p-0">
+                    <ul class="list-group list-group-flush">
+                        @if (Model.StaffByCategory.Count == 0)
+                        {
+                            <li class="list-group-item text-muted">No hay datos para mostrar.</li>
+                        }
+                        else
+                        {
+                            @foreach (var item in Model.StaffByCategory)
+                            {
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    @item.Key
+                                    <span class="badge bg-primary rounded-pill">@item.Value</span>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

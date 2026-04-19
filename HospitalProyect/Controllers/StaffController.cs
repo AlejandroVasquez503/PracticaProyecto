@@ -1,12 +1,14 @@
 ﻿using HospitalProyect.Models;
 using HospitalProyect.Repositories;
 using HospitalProyect.Utils;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace HospitalProyect.Controllers
 {
+    [Authorize]
     public class StaffController : Controller
     {
         private readonly StaffRepository _staffRepository;

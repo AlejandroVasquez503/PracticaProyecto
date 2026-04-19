@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|c:\\users\\renes\\source\\repos\\hospitalproyect_demo\\hospitalproyect\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|solutionrelative:hospitalproyect\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|c:\\users\\renes\\source\\repos\\hospitalproyect_demo\\hospitalproyect\\repositories\\dashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|solutionrelative:hospitalproyect\\repositories\\dashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|c:\\users\\renes\\source\\repos\\hospitalproyect_demo\\hospitalproyect\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|solutionrelative:hospitalproyect\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|c:\\users\\renes\\source\\repos\\hospitalproyect_demo\\hospitalproyect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|solutionrelative:hospitalproyect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|c:\\users\\renes\\source\\repos\\hospitalproyect_demo\\hospitalproyect\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|solutionrelative:hospitalproyect\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|c:\\users\\renes\\source\\repos\\hospitalproyect_demo\\hospitalproyect\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|solutionrelative:hospitalproyect\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|c:\\users\\renes\\source\\repos\\hospitalproyect_demo\\hospitalproyect\\viewsmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{098A0BC1-AD5D-1CFB-9D6D-B6B3B9CF2336}|HospitalProyect\\HospitalProyect.csproj|solutionrelative:hospitalproyect\\viewsmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +46,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\Views\\Auth\\Register.cshtml",
-              "RelativeDocumentMoniker": "HospitalProyect\\Views\\Auth\\Register.cshtml",
-              "ToolTip": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\Views\\Auth\\Register.cshtml",
-              "RelativeToolTip": "HospitalProyect\\Views\\Auth\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-29T02:19:06.218Z",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\Program.cs",
+              "RelativeDocumentMoniker": "HospitalProyect\\Program.cs",
+              "ToolTip": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\Program.cs",
+              "RelativeToolTip": "HospitalProyect\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T04:37:28.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "HospitalProyect\\Views\\Auth\\Login.cshtml",
-              "ToolTip": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "HospitalProyect\\Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "HospitalProyect\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "HospitalProyect\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T04:34:11.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "HospitalProyect\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "HospitalProyect\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-29T02:17:21.154Z",
+              "WhenOpened": "2026-04-19T04:32:02.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardRepository.cs",
+              "DocumentMoniker": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\Repositories\\DashboardRepository.cs",
+              "RelativeDocumentMoniker": "HospitalProyect\\Repositories\\DashboardRepository.cs",
+              "ToolTip": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\Repositories\\DashboardRepository.cs",
+              "RelativeToolTip": "HospitalProyect\\Repositories\\DashboardRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T04:23:59.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\ViewsModels\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "HospitalProyect\\ViewsModels\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\renes\\source\\repos\\HospitalProyect_demo\\HospitalProyect\\ViewsModels\\DashboardViewModel.cs",
+              "RelativeToolTip": "HospitalProyect\\ViewsModels\\DashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T04:21:29.27Z",
               "EditorCaption": ""
             }
           ]
